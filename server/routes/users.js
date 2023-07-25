@@ -1,12 +1,14 @@
-import express from "express";
-import {
-  getUser,
-  getUserFriends,
-  addRemoveFriend,
-} from "../controllers/users.js";
-import { verifyToken } from "../middleware/auth.js";
+import express from 'express';
 
-const router = express.Router();
+import {
+    getUser,
+    getUserFriends,
+    addRemoveFriend,
+} from "../controllers/users.js";
+
+import { verifyToken } from '../middleware/auth.js';
+
+const router=express.Router();
 
 /* READ */
 router.get("/:id", verifyToken, getUser);

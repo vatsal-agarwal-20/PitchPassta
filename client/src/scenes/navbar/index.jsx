@@ -57,6 +57,30 @@ const Navbar = () => {
         >
           PitchPassta
         </Typography>
+        <Typography
+          fontSize="clamp(0.75rem, 1.5rem, 2rem)"
+          color="white"
+          onClick={() => navigate("/news")}
+          sx={{
+            "&:hover": {
+              cursor: "pointer",
+            },
+          }}
+        >
+          NEWS
+        </Typography>
+        <Typography
+          fontSize="clamp(0.75rem, 1.5rem, 2rem)"
+          color="white"
+          onClick={() => navigate("/api-news")}
+          sx={{
+            "&:hover": {
+              cursor: "pointer",
+            },
+          }}
+        >
+          API NEWS
+        </Typography>
         {isNonMobileScreens && (
           <FlexBetween
             backgroundColor={neutralLight}

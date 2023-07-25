@@ -1,0 +1,13 @@
+.news-card
+{
+    padding: 20px;
+    z-index: 20;
+}
+/* .news-content
+{
+    overflow-y: scroll;
+} */
+.api-news-page
+{
+    background-color: "#2D2D2D";
+}
